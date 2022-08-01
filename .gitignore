@@ -1,6 +1,5 @@
-# ignore API_TOKEN_KEY api/api.py
-api/
-*.py
+# ignore API_TOKEN_KEY api.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
