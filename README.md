@@ -2,7 +2,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 [![Medium Badge](https://img.shields.io/badge/medium-%2312100E.svg?&style=for-square&logo=medium&logoColor=white)](https://medium.com/@halip26)
 
-In this project (Image Editor in JavaScript), as you’ve seen in the preview image, users can apply different filters to their image like grayscale, inversion, saturation, and adjust the image brightness. Additionally, users can also rotate or flip the images and save their edited images.
+In this project Edit background color written in python, as you’ve seen in the preview image, users can apply different filters to their image like grayscale, inversion, saturation, and adjust the image brightness. Additionally, users can also rotate or flip the images and save their edited images.
 
 This project is made with vanilla JavaScript. If you’re excited to view a demo of this image editor or want to know what this editor looks like. You can click link that I provided in description to view a live demo of this simple image editor.
 
@@ -10,7 +10,7 @@ This project is made with vanilla JavaScript. If you’re excited to view a demo
 
 ---
 ### 💻 &nbsp;Preview :
-<p align="center"><img src="assets/site-preview.png" width="500" height="400" /></p>
+<p align="center"><img src="images/preview.png" width="500" height="400" /></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
