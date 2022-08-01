@@ -2,15 +2,16 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 [![Medium Badge](https://img.shields.io/badge/medium-%2312100E.svg?&style=for-square&logo=medium&logoColor=white)](https://medium.com/@halip26)
 
-In this project Edit background color written in python, as you’ve seen in the preview image, users can apply different filters to their image like grayscale, inversion, saturation, and adjust the image brightness. Additionally, users can also rotate or flip the images and save their edited images.
-
-This project is made with vanilla JavaScript. If you’re excited to view a demo of this image editor or want to know what this editor looks like. You can click link that I provided in description to view a live demo of this simple image editor.
+In this project Edit background color written in python, as you’ve seen in the preview image, users can change background color in seconds powered by Artificial Intelligence that already provided by [remove.bg](https://www.remove.bg) and you just need to call & use it thorough API (Application Programming Interface) that already provided here [API](https://www.remove.bg/api).
 
 <p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="500" height="300"  /></p>
 
 ---
 ### 💻 &nbsp;Preview :
-<p align="center"><img src="images/preview.png" width="700" height="400" /></p>
+<p align="center">Before</p>
+<p align="center"><img src="images/preview1.png" width="700" height="400" /></p>
+<p align="center">After</p>
+<p align="center"><img src="images/preview2.png" width="700" height="400" /></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
@@ -22,7 +23,7 @@ This project is made with vanilla JavaScript. If you’re excited to view a demo
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/illustrator/illustrator-plain.svg" title="AdobeIllustrator" alt="AdobeIllustrator" width="40" height="40"/>&nbsp;
+
 </p>
 
 ---
@@ -31,6 +32,32 @@ A Python API wrapper for removing backgrounds from picture using [remove.bg](htt
 
 # Installation
 `pip install requests`
+
+# Before run set the dependencies:
+```python
+#this should be written on "edit_bg.py"
+from api import API_TOKEN_KEY
+
+#create a new file with name "api.py" 
+#then write these code 👇
+
+API_TOKEN_KEY = 'YOUR_API_TOKEN_KEY'
+
+#* Create API_TOKEN_KEY from here https://www.remove.bg/dashboard#api-key
+
+#copy your photos that you want to change the bg color 
+#then, change the path name with your photos on line 22 at "edit_bg.py"
+
+edit_bg(img='images/your-photos.png', bg_color='0000FF')
+
+#and, that's it.
+
+#Warm regards, Halipuddin 😎
+
+```
+
+# Run on terminal
+`python edit_bg.py` 
 
 # Usage
 ## `remove_background_from_img_file`
@@ -55,15 +82,7 @@ Removes the background given an image file.
 | bg_type       | `None`        | background type (`None` = no background, `'path'`, `'url'`, `'color'`) |
 | new_file_name | `'no-bg.png'` | file name of the result image |
 
-### Code Example:
-```python
-from removebg import RemoveBg
-
-rmbg = RemoveBg("YOUR-API-KEY", "error.log")
-rmbg.remove_background_from_img_file("joker.jpg")
-
 ---
-
 ### 📑 &nbsp;License:
 
 MIT License
