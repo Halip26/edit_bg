@@ -1,0 +1,2 @@
+# ignore API_TOKEN_KEY api/api.py
+api/*.py
