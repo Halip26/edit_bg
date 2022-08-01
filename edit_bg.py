@@ -1,7 +1,7 @@
 # Install semua dependencies-nya
 # dibutuhkan "requests" untuk diinstall (lihat python-requests.org)
 import requests
-from api import API_KEY_RM_BG
+from api import API_TOKEN_KEY
 
 
 def edit_bg(img, bg_color):
@@ -9,7 +9,7 @@ def edit_bg(img, bg_color):
         'https://api.remove.bg/v1.0/removebg',
         files={'image_file': open(img, 'rb')},
         data={'size': 'auto', 'bg_color': bg_color},
-        headers={'X-Api-Key': API_KEY_RM_BG},
+        headers={'X-Api-Key': API_TOKEN_KEY},
     )
     if response.status_code == requests.codes.ok:
         with open('output/edit_bg.png', 'wb') as out:
