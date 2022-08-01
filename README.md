@@ -2,7 +2,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 [![Medium Badge](https://img.shields.io/badge/medium-%2312100E.svg?&style=for-square&logo=medium&logoColor=white)](https://medium.com/@halip26)
 
-In this project Edit background color written in python, as you’ve seen in the preview image, users can change background color in seconds powered by Artificial Intelligence that already provided by [remove.bg](https://www.remove.bg) and you just need to call & use it thorough API (Application Programming Interface) that already provided here [API](https://www.remove.bg/api).
+In this project Edit background color written in python, as you’ve seen in the preview image, users can change background color in seconds powered by Artificial Intelligence that already provided by [remove.bg](https://www.remove.bg) and you just need to call & use it thorough API (Application Programming Interface) that provided here [API](https://www.remove.bg/api).
 
 <p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="500" height="300"  /></p>
 
