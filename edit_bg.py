@@ -1,7 +1,7 @@
 # Install semua dependencies-nya
 # dibutuhkan "requests" untuk diinstall (lihat python-requests.org)
 import requests
-from api import API_TOKEN_KEY
+from api.api import API_TOKEN_KEY
 
 
 def edit_bg(img, bg_color):
