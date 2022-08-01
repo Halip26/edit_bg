@@ -33,7 +33,7 @@ A Python API wrapper for removing backgrounds from picture using [remove.bg](htt
 # Installation
 `pip install requests`
 
-# Before run set the dependencies:
+# Before run, set the dependencies first:
 ```python
 #this should be written on "edit_bg.py"
 from api import API_TOKEN_KEY
