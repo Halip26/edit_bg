@@ -10,7 +10,7 @@ This project is made with vanilla JavaScript. If you’re excited to view a demo
 
 ---
 ### 💻 &nbsp;Preview :
-<p align="center"><img src="images/preview.png" width="500" height="400" /></p>
+<p align="center"><img src="images/preview.png" width="700" height="400" /></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
