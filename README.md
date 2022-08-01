@@ -30,6 +30,27 @@ In this project Edit background color written in python, as you’ve seen in the
 # remove-bg
 A Python API wrapper for removing backgrounds from picture using [remove.bg](https://www.remove.bg)'s [API](https://www.remove.bg/api).
 
+# Run Locally
+
+To run **Techx** locally, run this command on your git bash:
+
+Linux and macOS:
+
+```bash
+sudo git clone https://github.com/Halip26/edit_bg.git
+```
+```bash
+cd edit_bg
+```
+
+Windows:
+
+```bash
+git clone https://github.com/Halip26/edit_bg.git
+```
+```bash
+cd edit_bg
+```
 # Installation
 `pip install requests`
 
