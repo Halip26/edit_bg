@@ -19,15 +19,51 @@ This project is made with vanilla JavaScript. If you’re excited to view a demo
 ### 🛠 &nbsp;Languages and Tools :
 
 <p> 
-<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/illustrator/illustrator-plain.svg" title="AdobeIllustrator" alt="AdobeIllustrator" width="40" height="40"/>&nbsp;
 </p>
 
 ---
+# remove-bg
+A Python API wrapper for removing backgrounds from picture using [remove.bg](https://www.remove.bg)'s [API](https://www.remove.bg/api).
+
+# Installation
+`pip install requests`
+
+# Usage
+## `remove_background_from_img_file`
+
+Removes the background given an image file.
+
+| Parameter     | Default Value | Description   |
+| ------------- | ------------- | ------------- |
+| img_file_path | req. param    | path to the source image file |
+| size          | `'regular'`   | size of the output image (`'auto'` = highest available resolution, `'preview'`|`'small'`|`'regular'` = 0.25 MP, `'medium'` = 1.5 MP, `'hd'` = 4 MP, `'full'`|`'4k'` = original size) |
+| type          | `'auto'`      | foreground object (`'auto'` = autodetect, `'person'`, `'product'`, `'car'`) |
+| type_level    | `'none'`      | classification level of the foreground object (`'none'` = no classification, `'1'` = coarse classification (e.g. `'car'`), `'2'` = specific classification (e.g. `'car_interior'`), `'latest'` = latest classification) |
+| format        | `'auto'`      | image format (`'auto'` = autodetect, `'png'`, `'jpg'`, `'zip'`) |
+| roi       | `'0 0 100% 100%'` | region of interest, where to look for foreground object (x1, y1, x2, y2) in px or relative (%) |
+| crop          | `None`        | px or relative, single val = all sides, two vals = top/bottom, left/right, four vals = top, right, bottom, left |
+| scale         | `'original'`  | image scale relative to the total image size |
+| position      | `'original'`  | `'center'`, `'original'`, single val = horizontal and vertical, two vals = horizontal, vertical |
+| channels      | `'rgba'`      | request the finalized image (`'rgba'`) or an alpha mask (`'alpha'`) |
+| shadow        | `False`       | whether to add an artificial shadow (some types aren't supported) |
+| semitransparency | `True`     | semitransparency for windows or glass objects (some types aren't supported) |
+| bg            | `None`        | background (`None` = no background, path, url, color hex code (e.g. `'81d4fa'`, `'fff'`), color name (e.g. `'green'`)) |
+| bg_type       | `None`        | background type (`None` = no background, `'path'`, `'url'`, `'color'`) |
+| new_file_name | `'no-bg.png'` | file name of the result image |
+
+### Code Example:
+```python
+from removebg import RemoveBg
+
+rmbg = RemoveBg("YOUR-API-KEY", "error.log")
+rmbg.remove_background_from_img_file("joker.jpg")
+
+---
+
 ### 📑 &nbsp;License:
 
 MIT License
