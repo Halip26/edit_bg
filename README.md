@@ -4,7 +4,7 @@
 
 In this project Edit background color written in python, as you’ve seen in the preview image, users can change background color in seconds powered by Artificial Intelligence that already provided by [remove.bg](https://www.remove.bg) and you just need to call & use it thorough API (Application Programming Interface) that provided here [API](https://www.remove.bg/api).
 
-<p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="500" height="300"  /></p>
+<p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" style="width:100%"  /></p>
 
 ---
 ### 💻 &nbsp;Preview :
