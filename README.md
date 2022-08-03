@@ -9,9 +9,9 @@ In this project Edit background color written in python, as you’ve seen in the
 ---
 ### 💻 &nbsp;Preview :
 <p align="center">Before</p>
-<p align="center"><img src="images/preview1.png" width="700" height="400" /></p>
+<p align="center"><img src="images/preview1.png" style="width:100%" /></p>
 <p align="center">After</p>
-<p align="center"><img src="images/preview2.png" width="700" height="400" /></p>
+<p align="center"><img src="images/preview2.png" style="width:100%" /></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
