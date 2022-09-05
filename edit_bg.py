@@ -1,6 +1,7 @@
 # Install semua dependencies-nya
-# dibutuhkan "requests" untuk diinstall (lihat python-requests.org)
+# dibutuhkan "requests" & "datetime" untuk diinstall (lihat python-requests.org)
 import requests
+from datetime import datetime
 from api import API_TOKEN_KEY
 
 
@@ -12,7 +13,7 @@ def edit_bg(img, bg_color):
         headers={'X-Api-Key': API_TOKEN_KEY},
     )
     if response.status_code == requests.codes.ok:
-        with open('output/edit_bg.png', 'wb') as out:
+        with open('output/hasilnya-%s.png'%datetime.now().strftime('%Y-%m-%d_%H-%M-%S'), 'wb') as out:
             out.write(response.content)
     else:
         print("Error:", response.status_code, response.text)
