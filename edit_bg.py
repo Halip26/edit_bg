@@ -20,4 +20,4 @@ def edit_bg(img, bg_color):
 
 
 # warna merah #FF0000, warna biru #0000FF, warna kuning #FFFF00
-edit_bg(img='images/emily.png', bg_color='0000FF')
+edit_bg(img='images/IMG_1114.jpg', bg_color='0000FF')
