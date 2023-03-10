@@ -4,7 +4,6 @@ import requests
 from datetime import datetime
 from api import API_TOKEN_KEY
 
-
 def edit_bg(img, bg_color):
     response = requests.post(
         'https://api.remove.bg/v1.0/removebg',
@@ -17,7 +16,6 @@ def edit_bg(img, bg_color):
             out.write(response.content)
     else:
         print("Error:", response.status_code, response.text)
-
 
 # warna merah #FF0000, warna biru #0000FF, warna kuning #FFFF00
 edit_bg(img='images/IMG_1114.jpg', bg_color='0000FF')
