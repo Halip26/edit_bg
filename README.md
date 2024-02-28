@@ -7,7 +7,9 @@ In this project Edit background color written in python, as you’ve seen in the
 <p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" style="width:100%"  /></p>
 
 ---
-### 💻 &nbsp;Preview :
+
+### 💻 &nbsp;Preview
+
 <p align="center">Before</p>
 <p align="center"><img src="images/preview1.png" style="width:100%" /></p>
 <p align="center">After</p>
@@ -17,9 +19,9 @@ In this project Edit background color written in python, as you’ve seen in the
 
 ---
 
-### 🛠 &nbsp;Languages and Tools :
+### 🛠 &nbsp;Languages and Tools
 
-<p> 
+<p>
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
@@ -27,7 +29,9 @@ In this project Edit background color written in python, as you’ve seen in the
 </p>
 
 ---
+
 # remove-bg
+
 A Python API wrapper for removing backgrounds from picture using [remove.bg](https://www.remove.bg)'s [API](https://www.remove.bg/api).
 
 # Run Locally
@@ -39,6 +43,7 @@ Linux and macOS:
 ```bash
 sudo git clone https://github.com/Halip26/edit_bg.git
 ```
+
 ```bash
 cd edit_bg
 ```
@@ -48,13 +53,17 @@ Windows:
 ```bash
 git clone https://github.com/Halip26/edit_bg.git
 ```
+
 ```bash
 cd edit_bg
 ```
+
 # Installation
+
 `pip install requests`
 
-# Before run, set the dependencies first:
+# Before run, set the dependencies first
+
 ```python
 #this should be written on "edit_bg.py"
 from api import API_TOKEN_KEY
@@ -78,9 +87,11 @@ edit_bg(img='images/your-photos.png', bg_color='0000FF')
 ```
 
 # Run on terminal
-`python edit_bg.py` 
+
+`python edit_bg.py`
 
 # Usage
+
 ## `remove_background_from_img_file`
 
 Removes the background given an image file.
@@ -104,7 +115,8 @@ Removes the background given an image file.
 | new_file_name | `'no-bg.png'` | file name of the result image |
 
 ---
-### 📑 &nbsp;License:
+
+### 📑 &nbsp;License
 
 MIT License
 
