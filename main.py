@@ -1,9 +1,12 @@
 # Install all dependecies
 
 import requests
-from key import API_TOKEN_KEY
+from api import API_TOKEN_KEY
 from datetime import datetime
 import sys
+
+# taqaddum, which means 'progress'.
+from tqdm import tqdm
 
 
 # create bg_changer function
@@ -14,19 +17,34 @@ def bg_changer(img, bg_color):
         data={"size": "auto", "bg_color": bg_color},
         headers={"X-Api-Key": API_TOKEN_KEY},
     )
+
+    # get response content in bytes
+    total_length = int(response.headers.get("content-length", 0))
+
+    # create progress bar
+    progress_bar = tqdm(total=total_length, unit="iB")
+
     if response.status_code == requests.codes.ok:
         with open(
             "output/hasil-%s.png" % datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "wb"
         ) as out:
-            out.write(response.content)
+            for chunk in response.iter_content(chunk_size=1024):
+                if chunk:
+                    # update progress bar
+                    progress_bar.update(len(chunk))
+
+                    out.write(chunk)
     else:
         print("Error:", response.status_code, response.text)
+
+    # close progress bar after download
+    progress_bar.close()
 
 
 # image path `python.exe .\main.py .\gambar_aku.jpg`
 path_image = sys.argv[1]
 
-# user can input the hex color code #1d76db (blue), #db231d (red), #ffff00 (yellow)
+# user can input the hex color code #1D76DB (blue), #DB231D (red), #FFFF00 (yellow)
 color_name = str(input("Enter the color name: "))
 
 bg_changer(path_image, color_name)

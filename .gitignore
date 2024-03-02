@@ -4,6 +4,7 @@ output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+images/
 *.py[cod]
 *$py.class
 
