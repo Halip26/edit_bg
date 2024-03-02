@@ -1,7 +1,7 @@
 # Install all dependecies
 
 import requests
-from api import API_TOKEN_KEY
+from key import API_TOKEN_KEY
 from datetime import datetime
 import sys
 
@@ -26,7 +26,7 @@ def bg_changer(img, bg_color):
 # image path `python.exe .\main.py .\gambar_aku.jpg`
 path_image = sys.argv[1]
 
-# user can input the hex color name
+# user can input the hex color code #1d76db (blue), #db231d (red), #ffff00 (yellow)
 color_name = str(input("Enter the color name: "))
 
 bg_changer(path_image, color_name)
