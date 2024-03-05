@@ -42,9 +42,9 @@ def bg_changer(img, bg_color):
 
 
 # image path `python.exe .\main.py .\gambar_aku.jpg`
-path_image = sys.argv[1]
+image_path = sys.argv[1]
 
 # user can input the hex color code #1D76DB (blue), #DB231D (red), #FFFF00 (yellow)
 color_name = str(input("Enter the color name: "))
 
-bg_changer(path_image, color_name)
+bg_changer(image_path, color_name)
